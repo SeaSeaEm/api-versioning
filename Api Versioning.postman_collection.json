@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "a6c71bec-439f-4dc3-91da-edcfa20edef1",
+		"name": "Api Versioning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1812303",
+		"_collection_link": "https://seaseaem.postman.co/workspace/Big-Muffin~766a1b8a-e444-46e7-8cec-1254962ab6ff/collection/1812303-a6c71bec-439f-4dc3-91da-edcfa20edef1?action=share&creator=1812303&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7052/api/v1/WeatherForecast/GetVersion1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/v1/WeatherForecast/GetVersion1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"v1",
+						"WeatherForecast",
+						"GetVersion1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7052/api/v2/WeatherForecast/GetVersion2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/v2/WeatherForecast/GetVersion2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"v2",
+						"WeatherForecast",
+						"GetVersion2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
