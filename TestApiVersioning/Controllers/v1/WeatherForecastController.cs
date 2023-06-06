@@ -16,7 +16,7 @@ public class WeatherForecastController : ControllerBase
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger) => _logger = logger;
 
-    [HttpGet("GetVersion1")]
+    [HttpGet("GetVersion")]
     public IActionResult GetVer() => Ok("This is version 1");
 
     [HttpGet(Name = "GetWeatherForecast1")]

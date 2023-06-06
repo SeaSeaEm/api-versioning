@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,12 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-
 builder.Services.AddApiVersioning(p =>
 {
     p.DefaultApiVersion = new ApiVersion(2, 0);
     p.ReportApiVersions = true;
     p.AssumeDefaultVersionWhenUnspecified = true;
+    p.ApiVersionReader = new UrlSegmentApiVersionReader();
 });
 
 builder.Services.AddVersionedApiExplorer(p =>

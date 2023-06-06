@@ -13,7 +13,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7052/api/v1/WeatherForecast/GetVersion1",
+					"raw": "https://localhost:7052/api/v1/WeatherForecast/GetVersion",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -23,7 +23,7 @@
 						"api",
 						"v1",
 						"WeatherForecast",
-						"GetVersion1"
+						"GetVersion"
 					]
 				}
 			},
@@ -35,7 +35,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7052/api/v2/WeatherForecast/GetVersion2",
+					"raw": "https://localhost:7052/api/v2/WeatherForecast/GetVersion",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -45,7 +45,7 @@
 						"api",
 						"v2",
 						"WeatherForecast",
-						"GetVersion2"
+						"GetVersion"
 					]
 				}
 			},
